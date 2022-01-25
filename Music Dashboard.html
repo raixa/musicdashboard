@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.c1{
+			position: relative;
+			display: flex;
+			height: 50px;
+			width: 100%;
+			background-color: lightpink;
+			top: 50px;
+		}
+.imgalbum{
+	display: inline-block;
+	height:  215px;
+	width: 215px;
+	position: relative;
+	top: 20px;
+	left: 20px;
+	margin: 10px;
+}
+.upsong{
+	height: 300px;
+	width: 100%;
+	position: relative;
+	top:  50px;
+}
+.upsong:hover img{
+	opacity: 0.6;
+	transform: scale(0.8);
+}
+.upsong img:hover{
+	opacity: 1;
+	transform: scale(1.2);
+}
+.artist{
+	position: flex;
+	height:  280px;
+	width: 20%;
+	text-align: left;
+
+}
+.img1:hover{
+	box-shadow: 2px 2px 20px slategray, -2px -2px 20px slategray;
+}
+}
+.artist:hover .mood{
+	box-shadow: 2px 2px 20px black, -2px -2px 20px black;
+}
+.name{
+	font-size: 0px;
+}
+.artist:hover .name{
+	font-size: 15px;
+	transform: translateY(-90px);
+	transition: 2s ;
+	transition-timing-function: ease;
+	
+}
+.lr{
+	position: relative;
+	display:  flex;
+	font-size: 15px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	width: 31%;
+	height: 100px;
+	top: 70px;
+	bottom: 5px;
+	margin: 5px;
+}
+.lr2{
+	position: relative;
+	display:  block;
+	font-size: 15px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+	width: 15%;
+	height: 150px;
+	top: 70px;
+	bottom: 5px;
+	margin: 5px;
+
+
+}
+.lr2:hover{
+	box-shadow: 2px 2px 20px black, -2px -2px 20px black;
+}
+.lr:hover{
+	box-shadow: 2px 2px 20px black, -2px -2px 20px black;
+}
+.lra{
+	height: 90px;
+	width:  90px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+.lra2{
+	height: 90px;
+	width:  90px;
+	position: relative;
+	top: 5px;
+	left: 25px;
+	
+}
+.play{
+	display: none;
+}
+.lr:hover .play{
+	display:  block;
+}
+.artist:hover .img1{
+filter: blur(1.5px);
+}
+.lr1{
+	position: relative;
+	display:  flex;
+	font-size: 15px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #99FFCC;
+	width: 95%;
+	height: 78px;
+	top: 0px;
+	bottom: 10px;
+	margin: 5px;
+
+
+}
+
+.lra1{
+	height: 70px;
+	width:  70px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+}
+.leftcl{
+	width: 75%;
+	height: 2000;
+
+}
+.rightcl{
+	width: 22%;
+	height:  500;
+
+}
+.rec{
+	position: fixed;
+	border-width: 4px;
+	border-color: #CCFFE5;
+	border-style: solid;
+	width: 24%;
+}
+.main{
+	position: relative;
+	display: flex;
+	background-image: linear-gradient(#330019, #36454F);
+	height: 1600px;
+	width: 100%;
+	bottom: 18px;
+}
+.recom{
+	text-align: center;
+	color: lightcoral;
+	width: 70%;
+	position: relative;
+	bottom: 5px;
+	left: 50px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: coral;
+	box-shadow: 1px 1px 20px lightcoral, -1px -1px 20px lightcoral;
+}
+	</style>
+	<title>
+		Music Player
+	</title>
+</head>
+<body>
+<div style='background-color: #FFCCCC; width: 100%; height: 80px; position: relative; bottom: 30px;box-shadow: 1px 1px 20px lightcoral, -1px -1px 20px lightcoral'>
+	<h1 style="color: #330019; font-size: 60px; text-align: center;"> Music Dashboard</h1>
+</div>
+	<div class='main'>
+		<div class='leftcl'>
+
+
+	<div class='c1'>
+		<img src='us.png' style='height: 50px; width: 50px'>
+		<h1 style=' position: relative; bottom: 15px'>Albums</h1>
+	</div>
+
+<div class='upsong'>
+<a href='https://open.spotify.com/album/52abbUrmRs1bmdVp01U9e2?si=8mRAyUUgToC_OMpzzlEBsA'> <img src='paranoid.jfif' class='imgalbum'> </a>
+<a href='https://open.spotify.com/album/7C8uqokvE67UOlu1TiEYMd?si=44taetiPRWOdgzU4wemwzQ'> <img src='chase.jfif' class='imgalbum'> </a>
+<a href='https://open.spotify.com/album/22DL6IRGNYNenKej7aw8pO?si=XDU-TasaSEmBdmPq1_ko6Q'> <img src='phases.jfif' class='imgalbum'> </a>
+<a href='https://open.spotify.com/album/78bpIziExqiI9qztvNFlQu?si=Cp-8g92dQaKOUK20JPbiRg'> <img src='artic.jpg' class='imgalbum'> </a>
+</div>
+
+<div class='c1'>
+		<img src='music.png' style='height: 50px; width: 50px'>
+		<h1 style=' position: relative; bottom: 15px'>Artists</h1>
+	</div>
+<div style=' display: flex;flex-wrap: wrap; height: 200px; width: 95%;  margin-top: 50px; margin-left: 5px;'>
+	<div class='artist'> 
+		<img class='img1' src='ari.jpg' style='position: relative; left: 55px; top: 20px; border-radius: 100%; height:150px; width:150px;'>
+		<h3 class='name' style='text-align: right; color:black'> Ariana Grande</h3>
+	</div>
+
+	<div class='artist'> 
+		<img class='img1' src='articm.jfif' style='position: relative; left: 55px; top: 20px; border-radius: 100%;height:150px; width:150px'>
+		<h3 class='name' style='text-align: right; color:#C0C0C0'> Artic Monkeys</h3>
+	</div>
+
+	<div class='artist' > 
+		<img class='img1' src='chasea.jpg' style='position: relative; left: 55px; top: 20px; border-radius: 100%;height:150px; width:150px'>
+		<h3 class='name' style='text-align: right; color:#708090'> Chase Atlantic</h3>
+	</div>
+
+	<div class='artist' > 
+		<img class='img1' src='tatem.jpg' style='position: relative; left: 55px; top: 20px; border-radius: 100%;height:150px; width:150px'>
+		<h3 class='name' style='text-align: right; color:black; position: relative; right:15px'> Tate Mcrae</h3>
+	</div>
+
+	<div class='artist' > 
+		<img class='img1' src='taylor.jpg' style='position: relative; left: 55px; top: 20px; border-radius: 100%;height:150px; width:150px'>
+		<h3 class='name' style='text-align: right; color:#C0C0C0;position: relative; right:13px'> Taylor Swift</h3>
+	</div>
+</div>
+<div class='c1'>
+		<img src='heart.png' style='height: 50px; width: 50px'>
+		<h1 style=' position: relative; bottom: 15px'>Popular Release</h1>
+	</div>
+<div style='display: flex;flex-wrap: wrap; height: 280px; width: 100%;'>
+<div class='lr'> 
+	<img class='lra' src='tate.jpg'>
+	<div style='display:block; position: relative;left:10px '>
+		<h2> Tate Mcrae </h2>
+		<h3 style='position: relative;bottom: 12px'> That Way </h3>
+	</div>
+	<div class='play'>
+		<a href='https://open.spotify.com/track/7l97ElWmIdVHWUaOeeU5ZC?si=f1926ed41e3d4526'>
+		<img style='height: 30px; width: 30px;position: relative ;top: 35px; right:170px; 'src='play.png'>
+	</a>
+	</div>
+</div>
+<div class='lr'>
+	<img class='lra' src='nbhd.jpg'>
+	<div style='display:block;  position: relative;left:10px'>
+		<h2> The Neighbourhood </h2>
+		<h3 style='position: relative;bottom: 12px'> Afraid </h3>
+	</div>
+	<div class='play'>
+		<a href='https://open.spotify.com/track/7brQHA2CgQpcMBiOlfiXYb?si=ead40bf001fa49b2'>
+		<img style='height: 30px; width: 30px;position: relative ;top: 35px; right:250px'src='play.png'>
+	</a>
+	</div>
+</div>
+<div class='lr'>
+	<img class='lra' src='chaseat.jfif'>
+	<div style='display:block; position: relative;left:10px'>
+		<h2> Chase Atlantic </h2>
+		<h3 style='position: relative;bottom: 12px'> Her </h3>
+	</div>
+	<div class='play'>
+		<a href='https://open.spotify.com/track/5i7g9wTIruXgWKvA83BXlk?si=0caa835799ac4a02'>
+		<img style='height: 30px; width: 30px;position: relative ;top: 35px; right:200px'src='play.png'>
+	</a>
+	</div>
+</div>
+<div class='lr'>
+	<img class='lra' src='olivia.jfif'>
+	<div style='display:block; position: relative;left:10px '>
+		<h2> Olivia Rodrigo </h2>
+		<h3 style='position: relative;bottom: 12px'> Favourite Crime</h3>
+	</div>
+	<div class='play'>
+		<a href='https://open.spotify.com/track/5JCoSi02qi3jJeHdZXMmR8?si=13d9c274e1c2439d'>
+		<img style='height: 30px; width: 30px;position: relative ;top: 35px; right:200px'src='play.png'>
+	</a>
+	</div>
+</div>
+<div class='lr'>
+	<img class='lra' src='1975.jpg'>
+	<div style='display:block; position: relative;left:10px'>
+		<h2> The 1975 </h2>
+		<h3 style='position: relative;bottom: 12px'> Be My Mistake </h3>
+	</div>
+	<div class='play'>
+		<a href='https://open.spotify.com/track/18UsAG7SfOQ5sxJEdjAMH0?si=1d84292a01c14685'>
+		<img style='height: 30px; width: 30px;position: relative ;top: 35px; right:170px'src='play.png'>
+	</a>
+	</div>
+</div>
+<div class='lr'>
+	<img class='lra' src='lana.jfif'>
+	<div style='display:block; position: relative;left:10px'>
+		<h2>Lana Del Ray </h2>
+		<h3 style='position: relative;bottom: 12px'> Summertime Sadness </h3>
+	</div>
+	<div class='play'>
+		<a href='https://open.spotify.com/track/3BJe4B8zGnqEdQPMvfVjuS?si=21b72f31366344a9'>
+		<img style='height: 30px; width: 30px;position: relative ;top: 35px; right:220px'src='play.png'>
+	</a>
+	</div>
+	</div>
+</div>
+
+<div class='c1'>
+		<img src='cloud.png' style='height: 40px; width: 50px; position: relative; top:2px'>
+		<h1 style=' position: relative; bottom: 15px; left: 2px'>Mood Play</h1>
+	</div>
+
+<div style=' display: flex;flex-wrap: wrap; height: 200px; width: 100%;  margin-top: 50px; margin-left: 5px;position: relative; left:50px'>
+	<div class='artist'> 
+		<a href='https://open.spotify.com/playlist/4cJ8qUzt5CSTE9XN5uK2z2?si=1d1e167cee494e62'>
+		<img class='mood' src='love.jpg' style='box-shadow: 1px 1px 10px #FFCCCC, -1px -1px 10px #FFCCCC; position: relative; left: 55px; top: 20px; border-radius: 100%; height:150px; width:150px;'>
+	</a>
+		<h3  style='text-align: right; color:#FF9999;right:48px;top: 10px;position: relative'> Love</h3>
+	</div>
+
+	<div class='artist'> 
+		<a href='https://open.spotify.com/playlist/4yXfnhz0BReoVfwwYRtPBm?si=0b6e8934ce764758'>
+		<img class='mood' src='sad.jpg' style='box-shadow: 1px 1px 10px #FFCCCC, -1px -1px 10px #FFCCCC;position: relative; left: 55px; top: 20px; border-radius: 100%;height:150px; width:150px'>
+	</a>
+		<h3  style='text-align: right; color:#C0C0C0;right:50px;top: 10px; position: relative'> Sad</h3>
+	</div>
+
+	<div class='artist' > 
+		<a href='https://open.spotify.com/playlist/37i9dQZF1DXdPec7aLTmlC?si=d46eb0a41cb948ad'>
+		<img class='mood' src='happy.jpg' style='box-shadow: 1px 1px 10px #FFCCCC, -1px -1px 10px #FFCCCC;position: relative; left: 55px; top: 20px; border-radius: 100%;height:150px; width:150px'>
+	</a>
+		<h3  style='text-align: right; color:#FFCC99;right:35px; top: 10px;position: relative'> Happy</h3>
+	</div>
+
+	<div class='artist' > 
+		<a href='https://open.spotify.com/playlist/52foLpr8ZyN3ADhCt0UKkZ?si=798a58c5fde84e32'>
+		<img class='mood' src='hip.jpg' style='box-shadow: 1px 1px 10px #FFCCCC, -1px -1px 10px #FFCCCC;position: relative; left: 55px; top: 20px; border-radius: 100%;height:150px; width:150px'>
+	</a>
+		<h3  style='text-align: right; color:#CCFF99; position: relative; right:35px ;top: 10px;'> Hippie</h3>
+	</div>
+</div>
+<div class='c1'>
+		<img src='drop.png' style='height: 50px; width: 50px'>
+		<h1 style=' position: relative; bottom: 15px'>Genre</h1>
+	</div>
+<div style='display: flex;flex-wrap: wrap; height: 280px; width: 100%; position: relative; left:50px'>
+<div class='lr2'> 
+	<a href='https://open.spotify.com/playlist/37i9dQZF1EQqkOPvHGajmW?si=8974023b6c18494f'>
+	<img class='lra2' src='indie.jfif'>
+</a>
+	<div style='display:block; position: relative;text-align: center;'>
+		<h2> Indie </h2>
+	</div>
+</div>
+<div class='lr2'>
+	<a href='https://open.spotify.com/playlist/37i9dQZF1EQoqCH7BwIYb7?si=9b77bc82a14743e8'>
+	<img class='lra2' src='rnb.jpg'>
+</a>
+	<div style='display:block;  position: relative;text-align: center;'>
+		<h2> R&B </h2>
+	</div>
+	
+</div>
+<div class='lr2'>
+	<a href='https://open.spotify.com/playlist/37i9dQZF1DWSfMe9z89s9B?si=d050fcd591454c5d'>
+	<img class='lra2' src='alt.jpg'>
+</a>
+	<div style='display:block; position: relative;text-align: center;'>
+		<h2> Alternative </h2>
+	</div>
+	
+</div>
+<div class='lr2'>
+	<a href='https://open.spotify.com/playlist/37i9dQZF1EQpgT26jgbgRI?si=dfe9686d13ac4b63'>
+	<img class='lra2' src='rock.jpg'>
+</a>
+	<div style='display:block; position: relative;text-align: center; '>
+		<h2> Rock </h2>
+		
+	</div>
+	
+</div>
+<div class='lr2'>
+	<a href='https://open.spotify.com/playlist/24yLzqXSP3RVAeb5Jpd1ev?si=d02603966e384821'>
+	<img class='lra2' src='count.jpg'>
+</a>
+	<div style='display:block; position: relative;text-align: center;'>
+		<h2> Country </h2>
+	</div>
+	
+</div>
+
+</div>
+
+</div>
+
+<div class='rightcl'>
+<div class='rec'>
+	<h2 class='recom'> Recommended </h2>
+
+<div class='lr1'>
+	<img class='lra1' src='bid.jfif'>
+	<div style='display:block; position: relative;left:10px '>
+		<a style='text-decoration: none;'href='https://open.spotify.com/track/7w5z1zkYX9QzDGRaVyZ9Fr?si=5eed9e2bc90c49c4'><h2 style='color:#A0A0A0'> Beauty in Death </h2></a>
+		<h3 style='position: relative;bottom: 12px'> Chase Atlantic</h3>
+	</div>
+	<div >
+				<img style='height: 30px; width: 30px;position: relative ;top: 45px; left:40px'src='like.png'>
+		</div>
+</div>
+
+<div class='lr1'>
+	<img class='lra1' src='fall.jfif'>
+	<div style='display:block; position: relative;left:10px '>
+		<a style='text-decoration: none;'href='https://open.spotify.com/track/1Ey7PyLGNxvJNvzrxPMLMV?si=3e121f9b024a48fc'><h2 style='color:#A0A0A0'> Falling </h2></a>
+		<h3 style='position: relative;bottom: 12px'> Chase Atlantic</h3>
+	</div>
+	<div >
+				<img style='height: 30px; width: 30px;position: relative ;top: 45px; left:85px'src='like.png'>
+		</div>
+</div>
+
+<div class='lr1'>
+	<img class='lra1' src='soft.jpg'>
+	<div style='display:block; position: relative;left:10px '>
+		<a style='text-decoration: none;'href='https://open.spotify.com/track/2K7xn816oNHJZ0aVqdQsha?si=9756badfc33d4188'><h2 style='color:#A0A0A0; text-decoration: none;'> Softcore </h2><a>
+		<h3 style='position: relative;bottom: 12px'> The Neighbourhood</h3>
+	</div>
+	<div >
+				<img style='height: 30px; width: 30px;position: relative ;top: 45px; left:45px'src='like.png'>
+		</div>
+</div>
+
+<div class='lr1'>
+	<img class='lra1' src='cry.jpg'>
+	<div style='display:block; position: relative;left:10px '>
+		<a style='text-decoration: none;'href='https://open.spotify.com/track/1ZpDQAlQpkqNRfedTuGRSo?si=f859fa413ef84341'><h2 style='color:#A0A0A0'> Cake </h2></a>
+		<h3 style='position: relative;bottom: 12px'> Melanie Martinez</h3>
+	</div>
+	<div >
+				<img style='height: 30px; width: 30px;position: relative ;top: 45px; left:60px'src='like.png'>
+		</div>
+</div>
+
+<div class='lr1'>
+	<img class='lra1' src='wby.jfif'>
+	<div style='display:block; position: relative;left:10px '>
+		<a style='text-decoration: none;'href='https://open.spotify.com/track/5XeFesFbtLpXzIVDNQP22n?si=6f996db643b9454f'><h2 style='color:#A0A0A0'> I Wanna Be Yours </h2></a>
+		<h3 style='position: relative;bottom: 12px'> Artic Monkeys</h3>
+	</div>
+	<div >
+				<img style='height: 30px; width: 30px;position: relative ;top: 45px; left:20px'src='like.png'>
+		</div>
+</div>
+</div>
+
